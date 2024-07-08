@@ -1,0 +1,50 @@
+{
+  "private": true,
+  "name": "@a/nextjs",
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "build": "bun with-env next build",
+    "clean": "git clean -xdf .next .turbo node_modules",
+    "dev": "bun with-env next dev",
+    "format": "prettier --check . --ignore-path ../../.gitignore",
+    "lint": "eslint",
+    "start": "bun with-env next start",
+    "typecheck": "tsc --noEmit",
+    "with-env": "dotenv -e ../../.env --"
+  },
+  "dependencies": {
+    "@a/ui": "*",
+    "@million/lint": "latest",
+    "@t3-oss/env-nextjs": "latest",
+    "embla-carousel-autoplay": "latest",
+    "framer-motion": "canary",
+    "geist": "latest",
+    "jotai": "latest",
+    "lenis": "latest",
+    "lucide-react": "latest",
+    "next": "rc",
+    "react": "rc",
+    "react-dom": "rc",
+    "react-intersection-observer": "latest",
+    "sharp": "latest",
+    "superjson": "latest",
+    "zod": "latest"
+  },
+  "devDependencies": {
+    "@a/eslint-config": "*",
+    "@a/prettier-config": "*",
+    "@a/tailwind-config": "*",
+    "@a/tsconfig": "*",
+    "@types/node": "latest",
+    "@types/react": "latest",
+    "@types/react-dom": "latest",
+    "dotenv-cli": "latest",
+    "eslint": "latest",
+    "jiti": "latest",
+    "prettier": "latest",
+    "tailwindcss": "latest",
+    "typescript": "latest"
+  },
+  "prettier": "@a/prettier-config"
+}
